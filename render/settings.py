@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default='django-insecure-f&5^dnmvfe%t4)(j@$
 DEBUG = os.getenv('DEBUG')
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://renderdeploymenttemplate.onrender.com','*']
 
 
 INSTALLED_APPS = [
