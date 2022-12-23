@@ -6,11 +6,10 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# SECRET_KEY = ''
-SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-f&5^dnmvfe%t4)(j@$#7&pjoqk!m!2ixpk$5j!a^l-pkb!sr-1')
+SECRET_KEY = os.getenv('SECRET_KEY', default='django-insecure-f&5^dnmvfe%t4)(j@$#7&pjoqk!m!2ixpk$5j!a^l-pkb!sr-1')
 
 # DEBUG = True
-DEBUG = 'RENDER' not in os.environ
+os.getenv('DEBUG')
 
 ALLOWED_HOSTS = []
 
