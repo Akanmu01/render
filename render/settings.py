@@ -8,14 +8,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='django-insecure-f&5^dnmvfe%t4)(j@$#7&pjoqk!m!2ixpk$5j!a^l-pkb!sr-1')
 
-# DEBUG = True
-os.getenv('DEBUG')
+DEBUG = os.getenv('DEBUG')
+
 
 ALLOWED_HOSTS = []
-
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 INSTALLED_APPS = [
