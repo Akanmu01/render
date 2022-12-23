@@ -100,7 +100,12 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
@@ -1040,3 +1045,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # git branch -M main
 # git remote add origin https://github.com/Akanmu01/render.git
 # git push -u origin main
+
+
+
