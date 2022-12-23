@@ -1,7 +1,7 @@
-databases:
-  - name: fbcorileiganmuanointedchampions
-    databaseName: fbcorileiganmuanointedchampions
-    user: fbcorileiganmuanointedchampions_user
+# databases:
+#   - name: fbcorileiganmuanointedchampions
+#     databaseName: fbcorileiganmuanointedchampions
+#     user: fbcorileiganmuanointedchampions_user
 
 services:
   - type: web
