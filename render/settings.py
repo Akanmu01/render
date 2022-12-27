@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'render.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default='postgres://fbcorileiganmuanointedchampions_user:VUoZnGqwrodOvlAfBaYuikehAZQcaOjP@dpg-cdb5rto2i3mnn0t94v60-a/fbcorileiganmuanointedchampions',
+        default='postgres://fbcorileiganmuanointedchampions_user:VUoZncaOjP@dpg-cdb5rto2i3mnn0t94v60-a/fbcorileiganmuanointedchampions',
         conn_max_age=600
     )
 }
